@@ -5,7 +5,7 @@
 
 
 
-This Project consists of creating resource groups for two virtual machines: one Windows and one Linux. The utility allows you to remotely connect to a desktop in the first virtual machine and install Wireshark in the second virtual machine which will ping and observe traffic. In the second virtual machine, the network security groups' traffic will be blocked and stopped.
+This IT project involves the creation of resource groups for two virtual machines – one running Windows and the other running Linux. The objective is to establish remote desktop connectivity to the Windows virtual machine and install Wireshark on the Linux virtual machine for monitoring and analyzing network traffic. Additionally, network security groups will be implemented on the second virtual machine to regulate and restrict network traffic as required.
 
 
 
@@ -31,10 +31,7 @@ This Project consists of creating resource groups for two virtual machines: one 
 
 </p>
 <p>
-In this demonstration, a resource group and two virtual machines were created through Microsoft Azure. First step logged into Azure.com under account information. Created the main resource group (RGProject) reviewed and created. 
-Next, I created the first virtual machine under the Resource group (RGProject), then created a virtual machine name (VMProjectW) and selected
-the region in which VM was made. I also created a VM in Windows 10. Lastly, I created the username and password then reviewed and created the first VM.
-I Followed this step to create the second VM and that one was created under Linux (VMProjectL). 
+In this IT demonstration, a resource group and two virtual machines were provisioned using Microsoft Azure. The process started by accessing the Azure portal at azure.com and logging in with the appropriate account credentials. A primary resource group named "RGProject" was then created and configured. Subsequently, the first virtual machine was created within the resource group "RGProject" with the name "VMProjectW", specifying the desired region for deployment, which in this case was Windows 10. User credentials were established, and the creation of the first VM was finalized after review. Following the same procedure, a second virtual machine was created under the same resource group, this time being configured for a Linux environment with the name "VMProjectL". 
 </p>
 <br />
 
@@ -44,11 +41,7 @@ I Followed this step to create the second VM and that one was created under Linu
 
 </p>
 <p>
-In this demonstration, the virtual machine was connected through a remote desktop.
-First I clicked on the Windows VM and copied the IP Address. Next, I clicked the start menu
-to search the remote desktop. After, I pasted the IP address on the remote desktop 
-I clicked search to connect remotely (connect with username and password). Then, on the remote desktop I Google searched Wireshark then downloaded
-and installed it.
+In this IT demonstration, the virtual machine was accessed via a remote desktop connection. Initially, the IP address of the Windows VM was copied after clicking on it. Following that, the start menu was utilized to search for the remote desktop application. Subsequently, the copied IP address was pasted into the remote desktop software, initiating the remote connection process by clicking 'connect' and inputting the necessary username and password credentials. Once connected to the remote desktop environment, Wireshark was searched for on Google, downloaded, and installed as required.
 </p>
 <br />
 
@@ -58,9 +51,7 @@ and installed it.
 
 </p>
 <p>
-In this demonstration, the navigation is all remotely done through Wireshark. First, I connected 
-to the ethernet this step is to start capturing live packets. Now observing all the live traffic
-that is happening in the VM. After filtering the traffic by the ICMP (internet Control Message Protocol) to stop movement.
+In this IT demonstration, the monitoring and analysis of network traffic were conducted remotely using Wireshark. Initially, the connection to the Ethernet interface was established to commence capturing live network packets. Subsequently, the live traffic within the virtual machine was observed in real-time. Following that, a filter was applied to isolate and focus on network traffic specifically related to the ICMP (Internet Control Message Protocol), effectively halting its movement for inspection.
 </p>
 <br />
 
@@ -70,8 +61,6 @@ that is happening in the VM. After filtering the traffic by the ICMP (internet C
 
 </p>
 <p>
-In this demonstration, the connection is being made through the virtual machine with Linux. Navigating back to Azure 
-to the second VM that was created to ping the Private IP address essentially. Next, I opened up Powershell and typed in "ping 10.0.0.5" 
-which is the second VM's private IP address. Now we can see it pinging and replying from the second VM. 
+In this IT demonstration, the networking operation is executed within a Linux-based virtual machine. The process involves returning to Azure to access the second VM that was provisioned. Subsequently, within the Linux virtual environment, Powershell was launched to initiate a ping operation towards the private IP address of the second VM. By inputting the command "ping 10.0.0.5", the network connectivity between the two virtual machines was tested, displaying successful ping responses, affirming the communication between the two VMs.
 </p>
 <br />
